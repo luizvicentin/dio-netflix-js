@@ -108,3 +108,9 @@ span{
 .button i{
     margin-right: 5px;
 }
+
+.movie-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
