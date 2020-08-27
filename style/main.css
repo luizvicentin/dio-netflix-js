@@ -1,0 +1,41 @@
+:root{
+    --red: #E50914;
+    --black: #141414;
+    --light-gray: #aaa;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 10rem;
+    margin-top: 1.3rem;
+    margin-left: 1.3xrem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--light-gray);
+    margin-right: 1rem;
+}
+
+header nav a:hover{
+    color: var(--white);
+    transition: 0.3s;
+}
+
