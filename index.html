@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/main.css">
-    <!--owlcss-->>
+    <link rel="stylesheet" href="style/responsive.css">
+    <!--owlcss-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
     <title>CLONE NETFLIX</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -18,17 +21,27 @@
                 <a href="#">Home</a>
                 <a href="#">Series</a>
                 <a href="#">Films</a>
-                <a href="#">Documentaries</a>
+                <a href="#">Recently Added</a>
+                <a href=""><i class="fas fa-search"></i></a>
             </nav>
-        </div> 
+        </div>
     </header>
-    
+
     <main>
         <div class="highlight">
             <div class="container">
                 <img src="/img/Ozark.png" class="nseries" alt="Name of Ozark">
                 <h2 class="title">Ozark</h2>
-                <p class="description">A financial adviser drags his family from Chicago to the Missouri<br> Ozarks, where he must launder $500 million in five years to appease a<br> drug boss.</p>
+                <div class="info-metadata">
+                    <span class="year">2017</span>
+                    <span class="maturity-rating">
+                        <span class="maturity">16+ </span>
+                    </span>
+                    <span class="duration">3 Seasons</span>
+                    <a class="genre">Crime TV Dramas</a>
+                </div>
+                <p class="description">A financial adviser drags his family from Chicago to the Missouri<br> Ozarks,
+                    where he must launder $500 million in five years to appease a<br> drug boss.</p>
                 <p class="direction">
                     <span>Starring:</span>Jason Bateman, Laura Linney, Sofia Hublitz <br>
                     <span>Creators:</span>Bill Dubuque, Mark Williams
@@ -36,18 +49,50 @@
                 <div class="buttons">
                     <button role="button" class="button">
                         <i class="fas fa-play"></i>
-                        WATCH NOW
-                     </button>
+                        <a href="https://www.netflix.com/title/80117552" target="_blanck">WATCH NOW</a>
+                    </button>
                     <button role="button" class="button">
                         <i class="fas fa-info-circle"></i>
-                        MORE DETAILS
+                        <a href="">MORE DETAILS</a>
                     </button>
                 </div>
             </div>
-         </div>
+        </div>
+        <seccion class="news">
+            <div class="official-news">
+                <h3>It’s Official: Another Season Is Coming</h3>
+                <div>
+        </seccion>
+
+
     </main>
 
+    <seccion class="trailers">
+        <div>
+            <span class="videos">Videos</span>
+            <span class="videos-ozark">Ozark</span>
+        </div>
+        <div class="iframe">
+            <span>
+                <iframe width="360" height="202" src="https://www.youtube.com/embed/5hAXVqrljbs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </span>
+            <span>
+                <iframe width="360" height="202" src="https://www.youtube.com/embed/4Hw0JZrLOLQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </span>
+            <span>
+                <iframe width="360" height="202" src="https://www.youtube.com/embed/oNDTOy5bU_4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </span>
+        </div>
+    </seccion>
+
     <div class="carousel-movies">
+        <h2 class="popular">More Originals</h2>
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="movie-box" src="img/mini01.jpg" alt="">
@@ -79,14 +124,19 @@
             <div class="item">
                 <img class="movie-box" src="img/mini10.jpg" alt="">
             </div>
-        </div> 
+        </div>
     </div>
 
-
+    <footer>
+        <div class="footer">
+            <p>Ready to watch?</p>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/20b10eafb5.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
 </body>
+
 </html>

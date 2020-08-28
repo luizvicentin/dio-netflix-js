@@ -1,7 +1,7 @@
 :root{
     --red: #e50914;
     --black: #141414;
-    --light-gray: #aaa;
+    --light-gray: #a3a3a3;
     --white: #fff;
 }
 
@@ -43,15 +43,46 @@ header nav a {
 }
 
 header nav a:hover{
-    color: var(--white);
-    
+    color: var(--white);  
 }
 
 /* Main Highlight */
 .nseries{
-    width: 35%;
+    width: 40%;
+    height: auto;
     margin-bottom: 2rem;
 }
+
+.info-metadata{
+    margin: 0   1rem 1rem 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color:var(--light-gray);
+    display: inline-block;
+}
+
+.info-metadata>:not(:last-child){
+    border-right: 1px solid var(--light-gray);
+    margin-right: 9px;
+    padding-right: 10px;
+}
+
+.maturity-rating{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.maturity-rating .maturity{
+    border: 1px solid var(--light-gray);
+    padding: 0 3px;
+}
+
+.info-metadata .genre{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 .highlight {
     font-size: 1rem;
@@ -64,21 +95,22 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
 
 }
 
 .highlight .container{
     margin-left: 5rem;
     line-height: 1.5rem;
-}
+}    
 
 .highlight .title{
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .highlight .description{
-    margin-bottom: 1.3rem; 
+    margin-bottom: 1rem; 
 }
 
 span{
@@ -86,7 +118,12 @@ span{
 }
 
 .buttons{
-    margin-top: 1.5rem;;
+    margin-top: 1.5rem;
+}
+
+button a{
+    text-decoration: none;
+    color: var(--white);
 }
 
 .button{
@@ -109,8 +146,68 @@ span{
     margin-right: 5px;
 }
 
+.news{
+    padding: 25px 5vw;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.news .official-news{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--light-gray);
+    padding: 25px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.trailers .videos{
+    padding: .5rem;
+    margin-left: 5rem;
+    border-right: 1px solid var(--light-gray);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.trailers .videos-ozark{
+    padding: .5rem;
+}
+
+.trailers .iframe{
+    margin: 2rem;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.carousel-movies .popular{
+    padding: .8rem;
+    margin-left: 5rem;
+}
+
 .movie-box{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carousel-movies{
+    margin: 1rem 15px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--light-gray);;
+}
+
+.footer{
+    margin: 2rem;
+    padding: 36px 0;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    
 }
